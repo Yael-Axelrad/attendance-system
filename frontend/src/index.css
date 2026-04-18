@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f2f5;
+  direction: rtl;
+  min-height: 100vh;
+  display: block;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header h2 { font-size: clamp(16px, 4vw, 22px); color: #1a1a2e; }
+
+.header-right { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+.header-right span { color: #555; font-size: clamp(13px, 3vw, 15px); }
+
+.btn-logout { padding: 8px 14px; background: #6c757d; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; }
+
+.login-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f0f2f5; padding: 16px; }
+
+.login-card { background: white; padding: clamp(24px, 5vw, 40px); border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 100%; max-width: 380px; }
+
+.login-card h1 { text-align: center; margin-bottom: 24px; color: #1a1a2e; font-size: clamp(20px, 5vw, 26px); }
+
+.field { margin-bottom: 16px; }
+
+.field label { display: block; margin-bottom: 6px; font-weight: bold; color: #333; font-size: 15px; }
+
+.field input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-size: 16px; }
+
+.field input:focus { outline: none; border-color: #4361ee; }
+
+.btn-login { width: 100%; padding: 14px; background: #4361ee; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; margin-top: 8px; font-weight: bold; }
+
+.error-text { color: red; text-align: center; margin: 8px 0; font-size: 14px; }
+
+.clock-panel { background: white; border-radius: 12px; padding: clamp(20px, 4vw, 30px); text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 16px; }
+
+.status-badge { display: inline-block; padding: 8px 20px; border-radius: 20px; font-weight: bold; margin-bottom: 16px; font-size: clamp(15px, 4vw, 18px); }
+
+.clock-time { color: #555; margin-bottom: 8px; font-size: clamp(13px, 3vw, 15px); }
+
+.timer { font-size: clamp(36px, 10vw, 56px); font-weight: bold; color: #1a1a2e; margin-bottom: 20px; font-family: monospace; letter-spacing: 2px; }
+
+.paused-text { color: #856404; margin-bottom: 16px; font-size: 14px; }
+
+.clock-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+.btn-clock { padding: clamp(10px, 2vw, 14px) clamp(18px, 4vw, 28px); color: white; border: none; border-radius: 8px; font-size: clamp(14px, 3vw, 16px); cursor: pointer; font-weight: bold; min-width: 120px; }
+
+.btn-clock:disabled { opacity: 0.7; cursor: not-allowed; }
+
+.loading-text { color: #888; margin-top: 10px; font-size: 14px; }
+
+.history-container { background: white; border-radius: 12px; padding: clamp(16px, 3vw, 24px); box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow-x: auto; }
+
+.history-container h2 { margin-bottom: 16px; color: #1a1a2e; font-size: clamp(16px, 4vw, 20px); }
+
+.history-table { width: 100%; border-collapse: collapse; min-width: 400px; font-size: clamp(12px, 2.5vw, 14px); }
+
+.history-table th { padding: 10px 8px; text-align: right; border-bottom: 2px solid #dee2e6; color: #495057; white-space: nowrap; }
+
+.history-table td { padding: 10px 8px; text-align: right; color: #333; border-bottom: 1px solid #dee2e6; white-space: nowrap; }
+
+.badge { padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+
+.loading-page { text-align: center; padding: 40px; color: #888; }
