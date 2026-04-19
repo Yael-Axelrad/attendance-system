@@ -13,14 +13,14 @@ A full-stack employee attendance system built with **React, ASP.NET Core, and SQ
 
 * **Frontend:** React, TypeScript
 * **Backend:** ASP.NET Core Web API
-* **Database:** SQL Server 
+* **Database:** SQL Server
 * **Realtime:** SignalR
 
 ## Setup
 
 ### Backend
 
-```bash id="7u2q9x"
+```bash
 cd AttendanceSystem.API
 dotnet restore
 dotnet run
@@ -28,7 +28,7 @@ dotnet run
 
 ### Frontend
 
-```bash id="l0h3bz"
+```bash
 cd client
 npm install
 npm run dev
@@ -37,6 +37,11 @@ npm run dev
 ## Notes
 
 * Uses external time service (no local or server time)
+
+## Demo User
+
+* Employee Number: `EMP001`
+* PIN: `1234`
 
 ---
 
@@ -62,7 +67,7 @@ npm run dev
 
 ### צד שרת
 
-```bash id="a4z7gm"
+```bash
 cd AttendanceSystem.API
 dotnet restore
 dotnet run
@@ -70,7 +75,7 @@ dotnet run
 
 ### צד לקוח
 
-```bash id="k8t2nc"
+```bash
 cd client
 npm install
 npm run dev
@@ -79,3 +84,8 @@ npm run dev
 ## הערות
 
 * המערכת משתמשת בשירות זמן חיצוני (ללא שימוש בזמן מקומי או זמן השרת)
+
+## משתמש לדוגמה
+
+* מספר עובד: `EMP001`
+* קוד: `1234`
