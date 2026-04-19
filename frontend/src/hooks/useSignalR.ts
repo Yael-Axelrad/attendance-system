@@ -12,7 +12,7 @@ export function useSignalR(
     if (!token) return;
 
     const connection = new signalR.HubConnectionBuilder()
-      .withUrl('http://localhost:5261/hubs/attendance', {
+      .withUrl(`${import.meta.env.VITE_API_URL}/hubs/attendance`, {
         accessTokenFactory: () => token,
       })
       .withAutomaticReconnect()
